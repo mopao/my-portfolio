@@ -1,0 +1,137 @@
+/* this the general, header and footer styling file */
+
+/**************** general style ***********************************************************/
+*{
+    box-sizing: border-box;
+}
+body.container-fluid{
+    font-size: 14px;
+    margin: 0 auto;
+    color: #393e46;
+    font-family: sans-serif;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "HelveticaNeue-condensed-black";
+    src: url("../fonts/HelveticaNeueCondensedBlack.ttf")format("truetype");
+}
+@font-face {
+    font-family: "Georgia Bold";
+    src: url("../fonts/GeorgiaBold.ttf")format("truetype");
+}
+@font-face {
+    font-family: "HelveticaNeue-condensed-bold";
+    src: url("../fonts/HelveticaNeueCondensedBold.ttf")format("truetype");
+}
+@font-face {
+    font-family: "HelveticaNeue-medium";
+    src: url("../fonts/HelveticaNeueMedium.ttf")format("truetype");
+}
+@font-face {
+    font-family: "georgia";
+    src: url("../fonts/GeorgiaRegular.ttf")format("truetype");
+}
+@font-face {
+    font-family: "HelveticaNeue-bold";
+    src: url("../fonts/HelveticaNeueBold.ttf")format("truetype");
+}
+.content-wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0em 1em;
+}
+a, a:active, a:visited{
+    text-decoration: none;
+}
+
+h1,h2{
+    text-transform: uppercase;
+}
+.hide{
+    position: absolute;
+    left: -100000px;
+    width: 1px;
+    height: 1px;
+}
+
+.heading{
+    color: #5a7667;
+    text-align: center;
+    font-family: "Georgia Bold";
+    padding: 1em;
+    font-size: 1.6em;
+    margin: 0px;
+}
+
+.main-section{
+  padding: 0em 1.5em 1em 1.5em;
+  border-bottom: 1px solid #e1e5ea;
+}
+
+/*************************** navigation bar style *************************************************/
+header{
+    background-color: #5a7667;
+}
+nav#menubar{
+  background-color: #5a7667;
+}
+.navbar-light .navbar-brand{
+  font-family: "HelveticaNeue-condensed-black";
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+/******************************** footer style ******************************************************/
+
+#social_media_link{
+    text-align: center;
+    height: 2em;
+    display: none;
+}
+ul#list-socialmediaLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    margin: 0px;
+    padding: 0px;
+}
+ul#list-socialmediaLinks li{
+    list-style-type: none;
+    display: inline-block;
+}
+ul#list-socialmediaLinks li:first-of-type{
+    margin-right: 2em;
+}
+ul#list-socialmediaLinks li a i#f_github:hover{
+    color: white;
+}
+ul#list-socialmediaLinks li a i#f_linkedln:hover{
+    background: white;
+}
+#f_github{
+    font-size: 1.65em;
+    color: black;
+}
+#f_linkedln{
+    padding: 5px;
+    border-radius: 45%;
+    color:  #c3d4cc;
+    background: black;
+    font-size: 1em;
+}
+#div-copyright{
+    color: white;
+    background-color: #5a7667;
+    text-align: center;
+    padding: 0.2em;
+    text-transform: capitalize;
+    font-size: 0.8em;
+}

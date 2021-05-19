@@ -1,6 +1,6 @@
 
 <?php
-session_start();
+//session_start();
 $dirPages='views/';//pages directory
 $pageExtension='.php';
 $forbidden_pages_array= array();
@@ -15,7 +15,7 @@ else{
 
 	if (preg_match('/^[a-z0-9_\-]+$/i', $page)){
 
-		if (!in_array($page, $forbidden_pages_array) && file_exists("pages/".$page.".php")) {
+		if (!in_array($page, $forbidden_pages_array) && file_exists($dirPages.$page.".php")) {
 
 			include_once $dirPages.$page.$pageExtension;
 		}

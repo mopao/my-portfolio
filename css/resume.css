@@ -1,0 +1,29 @@
+
+
+section#education h3, section#experience h3{
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: black;
+}
+.program{
+  margin: 0.7em auto;
+}
+.program ul{
+  padding-left: 0em;
+  font-size: 0.9em;
+}
+.program ul li{
+  list-style-type: none;
+}
+
+.program ul li:first-of-type{
+  text-transform: capitalize;
+}
+
+div.experience-company a {
+  color: inherit;
+}
+
+.experience ul{
+  font-size: 0.9em;
+}

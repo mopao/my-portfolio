@@ -1,83 +1,4 @@
-/**************** general style ***********************************************************/
-*{
-    box-sizing: border-box;
-}
-body{
-    font-size: 14px;
-    margin: 0 auto;
-    color: #393e46;
-    font-family: sans-serif;
-}
 
-@font-face {
-    font-family: "HelveticaNeue-condensed-black";
-    src: url("../fonts/HelveticaNeueCondensedBlack.ttf")format("truetype");
-}
-@font-face {
-    font-family: "Georgia Bold";
-    src: url("../fonts/GeorgiaBold.ttf")format("truetype");
-}
-@font-face {
-    font-family: "HelveticaNeue-condensed-bold";
-    src: url("../fonts/HelveticaNeueCondensedBold.ttf")format("truetype");
-}
-@font-face {
-    font-family: "HelveticaNeue-medium";
-    src: url("../fonts/HelveticaNeueMedium.ttf")format("truetype");
-}
-@font-face {
-    font-family: "georgia";
-    src: url("../fonts/GeorgiaRegular.ttf")format("truetype");
-}
-@font-face {
-    font-family: "HelveticaNeue-bold";
-    src: url("../fonts/HelveticaNeueBold.ttf")format("truetype");
-}
-.content-wrapper{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0em 1em;
-}
-a, a:active, a:visited{
-    text-decoration: none;
-}
-
-h1,h2{
-    text-transform: uppercase;
-}
-.hide{
-    position: absolute;
-    left: -100000px;
-    width: 1px;
-    height: 1px;
-}
-
-.heading{
-    color: #5a7667;
-    text-align: center;
-    font-family: "Georgia Bold";
-    padding: 1em;
-    font-size: 1.6em;
-}
-
-/*************************** navigation bar style *************************************************/
-header{
-    background-color: #5a7667;
-}
-nav#menubar{
-  background-color: #5a7667;
-}
-.navbar-light .navbar-brand{
-  font-family: "HelveticaNeue-condensed-black";
-  color: white;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-.navbar-light .navbar-nav .nav-link{
-  color: white;
-  text-transform: capitalize;
-  font-size: 1.2em;
-}
 /* #nav-bar{
 
     display: flex;
@@ -153,14 +74,12 @@ ul#navigation-menu > li a:hover {
 
 }*/
 /************************ banner style ************************************************/
-main{
-  margin-top: 68px;
-}
+
 
 #banner{
     background-color: #829b7b;
     color: white;
-    padding: 0.5em 0em;
+    padding: 0.5em 1em;
 }
 
 #profile-img-wrapper img{
@@ -194,10 +113,7 @@ h1 > span{
 }
 
 /************************* 3 columns layout style ***************************************************/
-.main-section{
-  padding-bottom: 1em;
-  border-bottom: 1px solid #e1e5ea;
-}
+
 div#columns3-wrapper{
   padding: 0em;
 }
@@ -227,28 +143,40 @@ figcaption{
     margin-top: 0.4em;
 }
 
-/*************************** education section styling **************************************/
+/***************************** my work styling *******************************************/
+div#myWorkCaptions{
+  width: 50%;
+  margin: auto;
+  border: 1px solid #d1d9d9;
+}
 
-section#education h3{
-  font-size: 1.3em;
-  text-transform: capitalize;
+.carousel-indicators li {
+  background-color: gray;
+}
+.carousel-indicators li.active{
+  background-color:#829b7b;
+}
+.myWorkCaptions-title{
+  text-transform: uppercase;
+  background-color: gray;
+  border-top: 1px solid gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.myWorkCaptions-link{
+  background-color: #829b7b;
+  border-bottom: 1px solid #829b7b;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.myWorkCaptions-link a{
   color: black;
+  font-size: 0.8em;
 }
-.program{
-  margin: 0.7em auto;
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  color: gray;
+  background-color: gray;
 }
-.program ul{
-  padding-left: 0em;
-  font-size: 0.9em;
-}
-.program ul li{
-  list-style-type: none;
-}
-
-.program ul li:first-of-type{
-  text-transform: capitalize;
-}
-
 /*************************** skills section styling **************************************/
 
 section#skills h3{
@@ -258,8 +186,10 @@ section#skills h3{
 }
 
 
+
+
 /************************************* 2 columns layout style ***************************************/
-#layout-2columns{
+/*#layout-2columns{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -384,58 +314,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: white;
     color:#5a7667;
-}
-/******************************** footer style ******************************************************/
-footer{
-    margin-top: 2em;
-
-}
-#social_media_link{
-    text-align: center;
-    height: 2em;
-
-    display: none;
-}
-ul#list-socialmediaLinks{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2em;
-    margin: 0px;
-    padding: 0px;
-}
-ul#list-socialmediaLinks li{
-    list-style-type: none;
-    display: inline-block;
-}
-ul#list-socialmediaLinks li:first-of-type{
-    margin-right: 2em;
-}
-ul#list-socialmediaLinks li a i#f_github:hover{
-    color: white;
-}
-ul#list-socialmediaLinks li a i#f_linkedln:hover{
-    background: white;
-}
-#f_github{
-    font-size: 1.65em;
-    color: black;
-}
-#f_linkedln{
-    padding: 5px;
-    border-radius: 45%;
-    color:  #c3d4cc;
-    background: black;
-    font-size: 1em;
-}
-#div-copyright{
-    color: white;
-    background-color: #5a7667;
-    text-align: center;
-    padding: 0.2em;
-    text-transform: capitalize;
-    font-size: 0.8em;
-}
+}*/
 
 
 

@@ -10,8 +10,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <!-- our stylesheet -->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
         <script src="https://kit.fontawesome.com/c03ea9a48c.js" crossorigin="anonymous"></script>
     </head>
     <body class="container-fluid ">
@@ -67,63 +67,7 @@
                 </article>
                 </div>
             </section>
-            <section id="education" class="main-section">
-              <div class="row">
-                <h2 class="col-sm-12 heading">education</h2>
-              </div>
-              <section class="program">
-                <div class="row">
-                    <h3 class="col-sm-12">Humber College</h3>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <ul>
-                      <li>
-                        <span>web development program: </span>
-                        <span>Sept. 2020 - present</span>
-                      </li>
-                      <li>Key courses: ASP.NET, C#, HTML5, CSS3, JavaScript, PHP, SQL, MYSQL databases
-                         Oriented Object Programming and Web Services.</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-              <section class="program">
-                <div class="row">
-                    <h3 class="col-sm-12">University of MONS, Belgium</h3>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <ul>
-                      <li>
-                        <span>master's degree, Computer science: </span>
-                        <span>oct. 2011 - Jun. 2016</span>
-                      </li>
-                      <li>Key courses: java, python, artificial intelligence,
-                        software development life cycle, agile methods, mobile development (Android)</li>
-                        <li>Dissertation Topic: Answering in a polynomial time to self-join-free
-                          conjunctive queries on a database violating primary key constraints.</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-              <section class="program">
-                <div class="row">
-                    <h3 class="col-sm-12">University of Dschang, Cameroon</h3>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <ul>
-                      <li>
-                        <span>bachelor's degree, Computer science: </span>
-                        <span>oct. 2008 - Jun. 2011</span>
-                      </li>
-                      <li>Key courses: c, c++, java, Oriented Object Programming, SQL, MYSQL databases</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-            </section>
+
             <section id="skills" class="main-section">
               <div class="row">
                 <h2 class="col-sm-12 heading">skills</h2>
@@ -153,6 +97,56 @@
                   </ul>
 
                 </section>
+              </div>
+            </section>
+
+            <section id="my-work" class="main-section">
+              <div class="row">
+                <h2 class="col-sm-12 heading">take a look at some of my work</h2>
+              </div>
+              <div id="myWorkCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#myWorkCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#myWorkCaptions" data-slide-to="1"></li>
+                  <li data-target="#myWorkCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/flights_search_form.png" class="d-block w-100" alt="flights search engine caption">
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="myWorkCaptions-title">Flights search engine</div>
+                      <p class="myWorkCaptions-link">
+                        <a href="#"> Try it !</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/list-tickets.png" class="d-block w-100" alt="list of tickets caption">
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="myWorkCaptions-title">Basic ticket system</div>
+                      <p class="myWorkCaptions-link">
+                        <a href="#"> Try it !</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/itemList.jpg" class="d-block w-100" alt="list of items caption">
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="myWorkCaptions-title">Basic online sneakers store</div>
+                      <p class="myWorkCaptions-link">
+                        <a href="#">See details</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#myWorkCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myWorkCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
             </section>
         </main>
