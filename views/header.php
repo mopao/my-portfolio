@@ -13,14 +13,15 @@
           <li class="nav-item">
             <a class="nav-link <?= ($_GET['page']==="about")? "active" : ""?>" href="index.php?page=about">about</a>
           </li>
-          <li class="nav-item">
+        <!--  <li class="nav-item">
             <a class="nav-link <?= ($_GET['page']==="resume")? "active" : ""?>" href="index.php?page=resume">Resume</a>
           </li>
+        -->
           <li class="nav-item">
             <a class="nav-link <?= ($_GET['page']==="portfolio")? "active" : ""?>" href="index.php?page=portfolio">portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?= ($_GET['page']==="portfolio")? "active" : ""?>" href="index.php?page=contact">contact</a>
+            <a class="nav-link <?= ($_GET['page']==="contact")? "active" : ""?>" href="index.php?page=contact">contact</a>
           </li>
         </ul>
       </div>

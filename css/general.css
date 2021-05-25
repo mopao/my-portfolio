@@ -6,12 +6,14 @@
 }
 body.container-fluid{
     font-size: 14px;
-    margin: 0 auto;
     color: #393e46;
     font-family: sans-serif;
     padding: 0px;
 }
-
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
 @font-face {
     font-family: "HelveticaNeue-condensed-black";
     src: url("../fonts/HelveticaNeueCondensedBlack.ttf")format("truetype");
@@ -81,6 +83,7 @@ nav#menubar{
   color: white;
   font-size: 2em;
   text-transform: uppercase;
+  padding-left: 0.8rem;
 }
 .navbar-light .navbar-nav .nav-link{
   color: white;

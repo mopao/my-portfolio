@@ -1,5 +1,13 @@
+h1{
+  color: #5a7667;
+  text-align: center;
+  font-family: "Georgia Bold";
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
 
 
+/******************* education styling ****************************************/
 section#education h3, section#experience h3{
   font-size: 1.3em;
   text-transform: capitalize;
@@ -20,10 +28,13 @@ section#education h3, section#experience h3{
   text-transform: capitalize;
 }
 
+/************************ experience styling ********************************/
 div.experience-company a {
   color: inherit;
 }
-
+.experience{
+  margin: 0.7em auto;
+}
 .experience ul{
   font-size: 0.9em;
 }

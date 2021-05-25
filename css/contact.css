@@ -1,0 +1,120 @@
+h1{
+  color: #5a7667;
+  text-align: center;
+  font-family: "Georgia Bold";
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: #5a7667;
+}
+
+.contact{
+  font-weight: bold;
+  text-transform: capitalize;
+  color: black;
+}
+
+/************************************* 2 columns layout style ***************************************/
+h2{
+  font-size: 1.7em;
+  color: black;
+}
+#layout-2columns{
+    margin-top: 2em;
+    font-size: 12px;
+}
+
+#social-media, #enquiry{
+    border-bottom: 3px solid #5a7667;
+    font-family: "HelveticaNeue-bold";
+}
+ul#list-social-media >li{
+    list-style-type: none;
+}
+ul#list-social-media >li:last-of-type  {
+    margin-top: 1em;
+}
+ul#list-social-media{
+    padding: 0px;
+    margin-top: 1em;
+}
+ul#list-social-media li a {
+    color: black;
+    font-weight: bold;
+}
+#github , #linkedln{
+    margin-left: 0.2em;
+    font-size: 1.875em;
+    text-transform: uppercase;
+
+}
+#github-icon{
+    font-size: 1.875em;
+}
+
+ul#list-social-media > li> p {
+    margin: 0px;
+    font-size: 1.4em;
+}
+#linkedln-icon{
+    padding: 4px;
+    border-radius: 45%;
+    color: white;
+    background: black;
+    font-size: 1em;
+    vertical-align: super;
+}
+ul#list-social-media li a:hover i#linkedln-icon{
+    color: white;
+    background: #829b7b;
+}
+ul#list-social-media li a:hover{
+    color: #829b7b;
+}
+
+
+label{
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+
+input[type="text"],input[type="email"]{
+    font-size: 11px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form{
+  margin-bottom: 1.5em;
+}
+.error-message{
+  color: red;
+}
+
+.success-msg{
+	color:lightgreen;
+  font-size: 1.5em;
+}
+
+textarea{
+    font-size: 11px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#div-submit{
+    text-align: center;
+}
+
+input[type="submit"]{
+    text-transform:capitalize;
+    font-size: 1.5em;
+    background-color: #5a7667;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+input[type="submit"]:hover{
+    background-color: white;
+    color:#5a7667;
+}

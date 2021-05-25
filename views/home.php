@@ -21,7 +21,7 @@
 
             <div id="banner" class="row">
                 <div id="profile-img-wrapper" class="col-md-4">
-                    <img alt="franck cheuzem's picture" src="images/profile-image.png">
+                    <img alt="franck cheuzem's picture" src="images/profile-image3.png">
                 </div>
                 <div id="banner-msg-wrapper" class="col-md-8">
                     <h1><span id="profile-name">franck cheuzem </span><span id="profile-profession">web developer</span></h1>
@@ -78,7 +78,7 @@
                   <ul>
                     <li>PHP</li>
                     <li>Java</li>
-                    <li>JavaScript</li>
+                    <li>JavaScript, TypeScript</li>
                     <li>C#</li>
                     <li>Python</li>
                   </ul>
@@ -116,7 +116,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <div class="myWorkCaptions-title">Flights search engine</div>
                       <p class="myWorkCaptions-link">
-                        <a href="#"> Try it !</a>
+                        <a href="#"> see details</a>
                       </p>
                     </div>
                   </div>
@@ -125,7 +125,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <div class="myWorkCaptions-title">Basic ticket system</div>
                       <p class="myWorkCaptions-link">
-                        <a href="#"> Try it !</a>
+                        <a href="#"> see details</a>
                       </p>
                     </div>
                   </div>
@@ -149,43 +149,7 @@
                 </a>
               </div>
             </section>
-        </main>
- <!--
-        <div id="layout-2columns" class="page-wrapper">
-            <article id="social-media-wrapper">
-                <h2 id="social-media">Social media</h2>
-                <ul id="list-social-media">
-                    <li> <a href="#"><i id="github-icon" class="fab fa-github"></i><span id="github">github</span></a>
-                        <p>Follow for open-source projects.</p>
-                    </li>
-                    <li> <a href="#"><i id="linkedln-icon" class="fab fa-linkedin-in"></i><span id="linkedln">linkedln</span></a>
-                        <p>Let's connect on Linkedln.</p>
-                    </li>
-                </ul>
-            </article>
-            <form id="form-enquiry">
-                <h2 id="enquiry">enquiry</h2>
-                <div id="form-content-wrapper">
-                    <div>
-                    <label for="f_name" >name:</label>
-                    <input type="text" name="f_name" id="f_name">
-                </div>
-                <div>
-                    <label for="f_email" >Email:</label>
-                    <input type="email" name="f_email" id="f_email" >
-                </div>
-                <div id="div-message">
-                    <label for="f_message" class="hide">message:</label>
-                    <textarea placeholder="leave your message here." id="f_message" name="f_message" maxlength="1000" cols="25" rows="6"></textarea>
-                </div>
-
-                <div id="div-submit">
-                    <input type="submit" value="send">
-                </div>
-                </div>
-            </form>
-        </div>
-      -->
+        </main> 
         <?php include_once "views/footer.php" ?>
         <script type="text/javascript" src="js/jquery.min.js">
         </script>

@@ -74,25 +74,71 @@ ul#navigation-menu > li a:hover {
 
 }*/
 /************************ banner style ************************************************/
+/* text animation */
+@keyframes anim-zoom-in {
+  from {
+    -ms-transform: scale(0);/* IE 9 */
+    transform: scale(0);
+  }
+  to {
+    -ms-transform: scale(1);/* IE 9 */
+    transform: scale(1);
+  }
+}
+@keyframes anim-banner{
 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes anim-rotateY {
+
+  to {
+    -ms-transform:rotateY(0deg);
+    transform:rotateY(0deg);
+  }
+}
+@keyframes anim-text-color {
+
+  to {
+    color: white;
+  }
+}
 
 #banner{
     background-color: #829b7b;
     color: white;
     padding: 0.5em 1em;
+    opacity: 0;
+    animation-name: anim-banner;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 #profile-img-wrapper img{
+    position: relative;
     display:block;
     border: 5px solid #5a7667;
     border-radius: 10px;
     padding-top: 2px;
+    width: 100%;
+    margin:auto;
+    -ms-transform:rotateY(90deg);
+    transform:rotateY(90deg);
+    animation-name: anim-rotateY;
+    animation-duration: 3s;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 #banner-msg-wrapper{
     text-align: center;
 }
 h1{
-    margin:0px;
+    margin:1rem auto;
 }
 h1 > span{
     display: block;
@@ -100,16 +146,38 @@ h1 > span{
 }
 #banner-msg{
     font-size: 1.2em;
+    color: #829b7b;
+    animation-name: anim-text-color;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
   }
 
 #profile-name{
     font-family:"HelveticaNeue-condensed-bold";
     font-size: 1.7em;
+    text-shadow: 2px 2px 4px #000000;
+    transform: scale(0);
+    -ms-transform: scale(0);/* IE 9 */
+    animation-name: anim-zoom-in;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 #profile-profession{
     font-family:"HelveticaNeue-medium";
     font-size: 0.6em;
+    text-shadow: 2px 2px 4px #000000;
+    transform: scale(0);
+    -ms-transform: scale(0);/* IE 9 */
+    animation-name: anim-zoom-in;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 /************************* 3 columns layout style ***************************************************/
@@ -172,6 +240,7 @@ div#myWorkCaptions{
 .myWorkCaptions-link a{
   color: black;
   font-size: 0.8em;
+  text-transform: capitalize;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
   color: gray;
@@ -187,134 +256,6 @@ section#skills h3{
 
 
 
-
-/************************************* 2 columns layout style ***************************************/
-/*#layout-2columns{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 1.875em;
-}
-#social-media-wrapper{
-    width: 42%;
-}
-#form-enquiry{
-    width: 42%;
-
-}
-#social-media, #enquiry{
-    border-bottom: 5px solid #5a7667;
-    font-family: "HelveticaNeue-bold";
-}
-ul#list-social-media >li  {
-    margin-bottom: 3em;
-    list-style-type: none;
-}
-ul#list-social-media{
-    padding: 0px;
-    margin-top: 1.82em;
-}
-ul#list-social-media li a {
-    color: black;
-    font-weight: bold;
-}
-#github , #linkedln{
-    margin-left: 0.2em;
-    font-size: 1.875em;
-    text-transform: uppercase;
-
-}
-#github-icon{
-    font-size: 1.875em;
-}
-
-ul#list-social-media > li> p {
-    margin: 0px;
-    margin-top: 0.25em;
-    font-size: 1.625em;
-}
-#linkedln-icon{
-    padding: 4px;
-    border-radius: 45%;
-    color: white;
-    background: black;
-    font-size: 1em;
-    vertical-align: super;
-}
-ul#list-social-media li a:hover i#linkedln-icon{
-    color: white;
-    background: #829b7b;
-}
-ul#list-social-media li a:hover{
-    color: #829b7b;
-}
-
-
-label{
-    display: inline-block;
-    text-transform: capitalize;
-    font-size: 1.875em;
-    width: 3em;
-}
-
-#form-content-wrapper{
-    margin: auto;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-textarea::placeholder {
-    font-size:1.5em;
-    padding-left: 0.5em;
-}
-
-
-form > div#form-content-wrapper > div:not(:first-of-type){
-    margin-top: 1.375em;
-}
-form > div#form-content-wrapper > div:first-of-type{
-    margin-top: 0.5em;
-}
-
-input[type="text"],input[type="email"]{
-    width: 34.73em;
-    height: 3.5em;
-    font-size: 11px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-left: 0.625em;
-    vertical-align: text-bottom;
-}
-textarea{
-    height: 9.25em;
-    margin-left: 9.1em;
-    font-size: 11px;
-    width: 34.73em;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-#div-submit{
-    text-align: center;
-    margin-left: 6.125em;
-    width: 23.875em;
-}
-input[type="submit"]{
-    text-transform:uppercase;
-    font-size: 1.875em;
-    background-color: #5a7667;
-    color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-family: "Georgia Bold";
-
-}
-input[type="submit"]:hover{
-    background-color: white;
-    color:#5a7667;
-}*/
 
 
 
