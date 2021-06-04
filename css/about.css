@@ -1,12 +1,23 @@
 h1{
   color: #5a7667;
   text-align: center;
-  font-family: "Georgia Bold";
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  font-family: "HelveticaNeue-condensed-bold";
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
-
+/********************************** bio styling ********************************/
+section#bio{
+  border-top: 1px solid #e1e5ea;
+}
+div#bio-details{
+  padding-top: 1em;
+}
+.bio{
+  margin: 0.7em auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /******************* education styling ****************************************/
 section#education h3, section#experience h3{
   font-size: 1.3em;
@@ -24,6 +35,10 @@ section#education h3, section#experience h3{
   list-style-type: none;
 }
 
+div#education-details{
+  padding-top: 1em;
+}
+
 .program ul li:first-of-type{
   text-transform: capitalize;
 }
@@ -34,6 +49,9 @@ div.experience-company a {
 }
 .experience{
   margin: 0.7em auto;
+}
+div#experience-details{
+  padding-top: 1em;
 }
 .experience ul{
   font-size: 0.9em;

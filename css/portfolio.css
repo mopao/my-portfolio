@@ -1,0 +1,126 @@
+
+h1{
+  color: #5a7667;
+  text-align: center;
+  font-family: "HelveticaNeue-condensed-bold";
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  color: #5a7667;
+}
+
+main{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project{
+  max-width: 850px;
+  margin: auto;
+  background-color: #f5f2eb
+}
+main > section.project{
+  margin-bottom: 2.5em;
+  padding-bottom: 0.6em;
+}
+#f_github{
+  font-size: 1.1em;
+  display: inline-block;
+  vertical-align: baseline;
+  color: #9c3d54;
+}
+#f_github:hover{
+  color: gray;
+}
+.project h3{
+  color: black;
+  text-align: center;
+}
+
+.project h3{
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+.project h2{
+  padding-top: 1em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.url-wrapper{
+  text-align: center;
+}
+
+.url-wrapper a{
+  color: #9c3d54;
+}
+
+div.project-wrapper > div{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.project-wrapper {
+  width: fit-content;
+  margin: auto;
+  padding-top:1.5em;
+  border-top: 1px dashed lightgray;
+}
+.iframe-wrapper{
+  text-align: center;
+}
+.project-img-wrapper img , .project-img-wrapper iframe{
+  display: block;
+  margin: auto;
+  max-width: 350px;
+  width: 100%;
+}
+.project-img-wrapper{
+  margin-right: 1em;
+}
+.project-details {
+  margin-left: 1em;
+}
+div.project-details > section{
+  max-width: 400px;
+  width: 100%;
+}
+.project-details p, .project-details ul li{
+  font-size: 16px;
+  margin-top: 1em;
+}
+.project-tool ul li {
+  color: #9c3d54;
+}
+.project-details ul li span{
+  font-weight: bold;
+  color: black;
+}
+
+/********************** responsiveness ********************************************/
+@media only screen and (max-width: 850px) {
+  div.project-details > section{
+    max-width: 100%;
+    padding: 0.7em;
+  }
+
+  .project-img-wrapper img {
+    max-width: 80%;
+  }
+
+  .project{
+    max-width: 100%;
+  }
+  div.project-wrapper > div{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .project-img-wrapper{
+    margin-right: 0em;
+  }
+  .project-details {
+    margin-left: 0em;
+  }
+}

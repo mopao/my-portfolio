@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 body.container-fluid{
-    font-size: 14px;
+    font-size: 20px;
     color: #393e46;
-    font-family: sans-serif;
+    font-family: "open-sans";
     padding: 0px;
 }
 .row{
@@ -17,6 +17,14 @@ body.container-fluid{
 @font-face {
     font-family: "HelveticaNeue-condensed-black";
     src: url("../fonts/HelveticaNeueCondensedBlack.ttf")format("truetype");
+}
+@font-face {
+    font-family: "open-sans-light";
+    src: url("../fonts/OpenSans-Light.ttf")format("truetype");
+}
+@font-face {
+    font-family: "open-sans";
+    src: url("../fonts/OpenSans-Regular.ttf")format("truetype");
 }
 @font-face {
     font-family: "Georgia Bold";
@@ -60,15 +68,19 @@ h1,h2{
 .heading{
     color: #5a7667;
     text-align: center;
-    font-family: "Georgia Bold";
+    font-family: "HelveticaNeue-condensed-bold";
     padding: 1em;
-    font-size: 1.6em;
+    font-size: 2em;
     margin: 0px;
 }
 
 .main-section{
-  padding: 0em 1.5em 1em 1.5em;
+  padding: 0em 1em ;
   border-bottom: 1px solid #e1e5ea;
+}
+
+.required{
+  color: red;
 }
 
 /*************************** navigation bar style *************************************************/
@@ -89,11 +101,23 @@ nav#menubar{
   color: white;
   text-transform: capitalize;
   font-size: 1.2em;
+
+}
+.navbar-light .navbar-nav li.nav-item{
+  padding-left: 1em;
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar-light .navbar-nav .nav-link{
+
+    font-size: 0.9em;
+
+  }
 }
 
 /******************************** footer style ******************************************************/
 
-#social_media_link{
+/*#social_media_link{
     text-align: center;
     height: 2em;
     display: none;
@@ -129,7 +153,7 @@ ul#list-socialmediaLinks li a i#f_linkedln:hover{
     color:  #c3d4cc;
     background: black;
     font-size: 1em;
-}
+}*/
 #div-copyright{
     color: white;
     background-color: #5a7667;
@@ -137,4 +161,14 @@ ul#list-socialmediaLinks li a i#f_linkedln:hover{
     padding: 0.2em;
     text-transform: capitalize;
     font-size: 0.8em;
+}
+
+/************************** responsive style *********************************************/
+@media only screen and (max-width: 770px) {
+
+  body.container-fluid{
+      font-size: 16px;
+  }
+
+
 }

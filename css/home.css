@@ -102,7 +102,7 @@ ul#navigation-menu > li a:hover {
 @keyframes anim-text-color {
 
   to {
-    color: white;
+    opacity: 1;
   }
 }
 
@@ -117,7 +117,9 @@ ul#navigation-menu > li a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
-
+div#profile-img-wrapper{
+  padding-left: 10px;
+}
 #profile-img-wrapper img{
     position: relative;
     display:block;
@@ -125,7 +127,7 @@ ul#navigation-menu > li a:hover {
     border-radius: 10px;
     padding-top: 2px;
     width: 100%;
-    margin:auto;
+    max-width: 500px;
     -ms-transform:rotateY(90deg);
     transform:rotateY(90deg);
     animation-name: anim-rotateY;
@@ -145,14 +147,28 @@ h1 > span{
     text-align: center;
 }
 #banner-msg{
+    opacity: 0;
+    margin-top: 1.5em;
     font-size: 1.2em;
-    color: #829b7b;
+    color: white;
     animation-name: anim-text-color;
     animation-duration: 3s;
     animation-delay: 8s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
   }
+
+#my-project-link{
+  display: inline-block;
+  margin-top: 1.3em;
+  padding: 0em 1em;
+  background-color: #5a7667;
+  border: 5px solid gray;
+  border-radius: 30px;
+  text-transform: capitalize;
+  color: white;
+
+}
 
 #profile-name{
     font-family:"HelveticaNeue-condensed-bold";
@@ -187,6 +203,7 @@ div#columns3-wrapper{
 }
 #columns3-wrapper article{
     text-align: center;
+    margin: 1em auto;
 }
 
 figure{
@@ -196,19 +213,21 @@ figure img{
   position: relative;
   margin: auto;
    display: block;
+   max-width: 350px;
    width: 100%;
+   height: 350px;
 }
 figcaption{
     text-align: center;
     margin-top: 0.6em;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-transform: capitalize;
+    color: black;
 }
 #columns3-wrapper article p{
     font-size: 1.1em;
     margin: 0px;
-    margin-top: 0.4em;
 }
 
 /***************************** my work styling *******************************************/
@@ -217,7 +236,15 @@ div#myWorkCaptions{
   margin: auto;
   border: 1px solid #d1d9d9;
 }
-
+section#my-work{
+  padding-bottom: 1em;
+}
+div.carousel-inner div.carousel-item{
+  /*width: 60%;
+  margin: auto;
+  float: none;
+  height: 300px;*/
+}
 .carousel-indicators li {
   background-color: gray;
 }
@@ -230,6 +257,7 @@ div#myWorkCaptions{
   border-top: 1px solid gray;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  font-size: 0.8em;
 }
 .myWorkCaptions-link{
   background-color: #829b7b;
@@ -250,37 +278,47 @@ div#myWorkCaptions{
 
 section#skills h3{
   font-size: 1.3em;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: black;
 }
+div#skills-details{
+  position: relative;
+  margin: auto;
+  width: fit-content;
 
-
-
-
+}
+div#skills-details section {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  vertical-align: top;
+  margin: auto 1em;
+}
+div#skills-details section ul{
+  margin-bottom: 1em;
+}
 
 
 
 /************************** responsive style *********************************************/
-/*@media only screen and (max-width: 910px) {
-    #profile-name{
-        font-size: 1.8em;
-
+@media only screen and (max-width: 770px) {
+    #profile-img-wrapper img{
+      margin: auto;
     }
-    h1{margin-top: 0.3em;}
 
-    #profile-profession{
-
-        font-size: 0.6em;
+    div#myWorkCaptions{
+      width: 100%;
     }
-    #banner-msg-wrapper  #banner-msg {
-        font-size: 1.5em;
-        margin-top: 1.4em;
 
-
+    div#skills-details section {
+      display: block;
+      width: 100%;
     }
+
+
 
 }
-
+/*
 @media only screen and (max-width: 1152px) {
     textarea{
         margin-left: 0.9em;

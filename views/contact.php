@@ -48,14 +48,14 @@ if (isset($_POST['send'])) {
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Franck Cheuzem</title>
-        <meta name="description" content="franck cheuzem's portfolio"/>
+        <title>Franck Cheuzem - contact</title>
+        <meta name="description" content="franck cheuzem's contact"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- bootstrap css -->
         <link rel="stylesheet"  type="text/css" href="css/bootstrap/css/bootstrap.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
         <!-- our stylesheet -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="css/general.css">
         <link rel="stylesheet" type="text/css" href="css/contact.css">
         <script src="https://kit.fontawesome.com/c03ea9a48c.js" crossorigin="anonymous"></script>
@@ -67,12 +67,11 @@ if (isset($_POST['send'])) {
          <p>For inquiries or to get a quote, please do not hesitate
            to contact me using any of the means below.</p>
 
-           <ul>
-             <li> <span class="contact">Phone:</span> (+1) 416-835-1244 </li>
+           <ul>             
              <li> <span class="contact">email:</span> frankyves90@gmail.com </li>
            </ul>
            <div class="row" id="layout-2columns">
-             <article id="social-media-wrapper" class="col-sm-6">
+             <article id="social-media-wrapper" class="col-lg">
                  <h2 id="social-media">Social media</h2>
                  <ul id="list-social-media">
                      <li> <a href="https://github.com/mopao" target="_blank"><i id="github-icon" class="fab fa-github"></i><span id="github">github</span></a>
@@ -83,28 +82,28 @@ if (isset($_POST['send'])) {
                      </li>
                  </ul>
              </article>
-             <form id="form-enquiry" class="col-sm-6" method="post" action="#">
+             <form id="form-enquiry" class="col-lg" method="post" action="#">
                  <h2 id="enquiry">enquiry</h2>
                  <p class="success-msg"> <?= $success_msg ?> </p>
                  <div class="form-group">
                    <div class="error-message">
                      <?= $err_name ?>
                    </div>
-                   <label for="f_name" >name:</label>
+                   <label for="f_name" >name<span class="required">*</span> </label>
                    <input type="text" name="f_name" id="f_name" value="<?= $name ?>" class="form-control">
                  </div>
                  <div class="form-group">
                    <div class="error-message">
                      <?= $err_email ?>
                    </div>
-                     <label for="f_email" >Email:</label>
+                     <label for="f_email" >Email<span class="required">*</span></label>
                      <input type="email" name="f_email" id="f_email" value="<?= $email ?>" class="form-control" >
                  </div>
                  <div id="div-message" class="form-group">
                    <div class="error-message">
                      <?= $err_message ?>
                    </div>
-                     <label for="f_message">message:</label>
+                     <label for="f_message">message<span class="required">*</span></label>
                      <textarea placeholder="leave your message here." id="f_message" name="f_message"  rows="6" class="form-control"><?= $message ?></textarea>
                  </div>
 

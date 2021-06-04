@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^franckcheuzem.ca$
+RewriteRule ^(.*) https://www.franckcheuzem.ca/$1 [QSA,L,R=301]

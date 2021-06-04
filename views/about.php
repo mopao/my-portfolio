@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Franck Cheuzem</title>
-        <meta name="description" content="franck cheuzem's portfolio"/>
+        <title>Franck Cheuzem about</title>
+        <meta name="description" content="franck cheuzem's about"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- bootstrap css -->
         <link rel="stylesheet"  type="text/css" href="css/bootstrap/css/bootstrap.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
         <!-- our stylesheet -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="css/general.css">
         <link rel="stylesheet" type="text/css" href="css/about.css">
         <script src="https://kit.fontawesome.com/c03ea9a48c.js" crossorigin="anonymous"></script>
@@ -20,11 +20,11 @@
         <h1>About me</h1>
         <section id="bio" class="main-section">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-lg-4">
               <h2 class="heading">Bio</h2>
             </div>
-            <div class="col-sm-9">
-              <p>
+            <div class="col-lg-8">
+              <p class="bio">
                 I am passionate about learning backend and frontend development skills.
                 Devoting myself into projects involving different kinds of skills is actually what
                 I enjoy the most. I have a background in computer science, especially in computer
@@ -38,11 +38,11 @@
         </section>
         <section id="education" class="main-section">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-lg-4">
               <h2 class="heading">education</h2>
             </div>
 
-            <div class="col-sm-9">
+            <div class="col-lg-8" >
               <section class="program">
                 <div class="row">
                     <h3 class="col-sm-12">Humber College, Canada</h3>
@@ -104,10 +104,10 @@
 
         <section id="experience" class="main-section">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-lg-4">
               <h2 class="heading">experience</h2>
             </div>
-            <div class="col-sm-9">
+            <div class="col-lg-8">
 
               <section class="experience">
                 <div class="row">

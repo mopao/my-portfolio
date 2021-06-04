@@ -1,9 +1,9 @@
 h1{
   color: #5a7667;
   text-align: center;
-  font-family: "Georgia Bold";
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  font-family: "HelveticaNeue-condensed-bold";
+  margin-top: 1em;
+  margin-bottom: 1.5em;
   color: #5a7667;
 }
 
@@ -18,15 +18,21 @@ h2{
   font-size: 1.7em;
   color: black;
 }
+#social-media-wrapper{
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
 #layout-2columns{
-    margin-top: 2em;
-    font-size: 12px;
+    margin-top: 3em;
+
 }
 
 #social-media, #enquiry{
     border-bottom: 3px solid #5a7667;
-    font-family: "HelveticaNeue-bold";
+    font-family: "HelveticaNeue-condensed-bold";
+    color: #5a7667;
 }
+
 ul#list-social-media >li{
     list-style-type: none;
 }
@@ -43,25 +49,30 @@ ul#list-social-media li a {
 }
 #github , #linkedln{
     margin-left: 0.2em;
-    font-size: 1.875em;
+    font-size: 1.4em;
     text-transform: uppercase;
 
 }
 #github-icon{
-    font-size: 1.875em;
+    font-size: 1.1em;
+    position: relative;
+    top: -2px;
 }
 
 ul#list-social-media > li> p {
     margin: 0px;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 #linkedln-icon{
     padding: 4px;
     border-radius: 45%;
     color: white;
     background: black;
-    font-size: 1em;
-    vertical-align: super;
+    font-size: .8em;
+    vertical-align: middle;
+    position: relative;
+    top: -5px;
+
 }
 ul#list-social-media li a:hover i#linkedln-icon{
     color: white;
@@ -78,25 +89,26 @@ label{
 }
 
 input[type="text"],input[type="email"]{
-    font-size: 11px;
+    font-size: 16px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
 form{
   margin-bottom: 1.5em;
+  margin-left: 1.5em;
 }
 .error-message{
   color: red;
 }
 
 .success-msg{
-	color:lightgreen;
+	color: green;
   font-size: 1.5em;
 }
 
-textarea{
-    font-size: 11px;
+textarea#f_message{
+    font-size: 14px;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -109,12 +121,27 @@ input[type="submit"]{
     font-size: 1.5em;
     background-color: #5a7667;
     color: white;
-    border: 2px solid black;
+    border: 2px solid gray;
     border-radius: 10px;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
 }
 input[type="submit"]:hover{
     background-color: white;
     color:#5a7667;
+}
+
+/************************** responsive style *********************************************/
+@media only screen and (max-width: 995px) {
+
+  form{
+    margin-bottom: 1.5em;
+    margin-left: 0px;
+  }
+
+  #social-media-wrapper{
+    margin-right: 0px;
+
+  }
+
 }
