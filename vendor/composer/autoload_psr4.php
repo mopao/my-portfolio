@@ -14,4 +14,5 @@ return array(
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib/Doctrine/Common/Lexer'),
     'App\\ObjectManagers\\' => array($baseDir . '/objectManagers'),
+    'App\\Database\\' => array($baseDir . '/database'),
 );

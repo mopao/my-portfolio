@@ -1,3 +1,10 @@
+<?php
+use App\Database\{Database, SkillPDO};
+require_once 'vendor/autoload.php';
+
+$skillpdo = new SkillPDO();
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,23 +85,23 @@
           <section>
             <h3>Programming languages:</h3>
             <ul>
-              <li>PHP</li>
-              <li>Java</li>
-              <li>JavaScript, TypeScript</li>
-              <li>C#</li>
-              <li>Python</li>
+              <?php
+              $languages = $skillpdo->getSkills("programming language");
+              for ($i=0; $i < count($languages) ; $i++) {
+              echo "<li>". $languages[$i]->skill . "</li>";
+              }
+               ?>
             </ul>
           </section>
           <section>
             <h3>Technologies and Tools:</h3>
             <ul>
-              <li>Git, Composer</li>
-              <li>CSS3, SCSS, SASS</li>
-              <li>HTML5, XML, JSON, XSLT, XPATH</li>
-              <li>JQuery, Bootstrap</li>
-              <li>Node.JS, Angular, .NET</li>
-              <li>RESTful web services</li>
-              <li>SQL, MYSQL databases</li>
+              <?php
+              $techs_tools = $skillpdo->getSkills("technologies and tools");
+              for ($i=0; $i < count($techs_tools) ; $i++) {
+              echo "<li>". $techs_tools[$i]->skill . "</li>";
+              }
+               ?>
             </ul>
 
           </section>

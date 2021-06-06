@@ -124,7 +124,7 @@ div#profile-img-wrapper{
     position: relative;
     display:block;
     border: 5px solid #5a7667;
-    border-radius: 10px;
+    border-radius: 50%;
     padding-top: 2px;
     width: 100%;
     max-width: 500px;
@@ -161,12 +161,13 @@ h1 > span{
 #my-project-link{
   display: inline-block;
   margin-top: 1.3em;
-  padding: 0em 1em;
+  padding: 0.5em 2em;
   background-color: #5a7667;
   border: 5px solid gray;
   border-radius: 30px;
   text-transform: capitalize;
   color: white;
+  font-size: 1.5em;
 
 }
 
