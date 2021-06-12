@@ -42,7 +42,10 @@ div#education-details{
 .program ul li:first-of-type{
   text-transform: capitalize;
 }
-
+.diploma,.program-name, .dissertation{
+  font-weight: bolder;
+  color: black;
+}
 /************************ experience styling ********************************/
 div.experience-company a {
   color: inherit;

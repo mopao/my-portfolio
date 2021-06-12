@@ -1,4 +1,4 @@
-
+/***************** projects styling ***************************************/
 h1{
   color: #5a7667;
   text-align: center;
@@ -71,14 +71,20 @@ div.project-wrapper {
 .iframe-wrapper{
   text-align: center;
 }
-.project-img-wrapper img , .project-img-wrapper iframe{
+.project-img-wrapper img{
   display: block;
   margin: auto;
   max-width: 350px;
   width: 100%;
 }
+
+.project-img-wrapper iframe{
+  width: 350px;
+
+}
 .project-img-wrapper{
   margin-right: 1em;
+  text-align: center;
 }
 .project-details {
   margin-left: 1em;
@@ -86,6 +92,14 @@ div.project-wrapper {
 div.project-details > section{
   max-width: 400px;
   width: 100%;
+}
+div.project-details > section {
+  border-bottom: 1px dotted grey;
+  margin-bottom: 20px;
+}
+div.project-details > section:last-of-type{
+  border: none;
+  margin-bottom: 0px;
 }
 .project-details p, .project-details ul li{
   font-size: 16px;
@@ -98,9 +112,19 @@ div.project-details > section{
   font-weight: bold;
   color: black;
 }
+/********************************* pagination *************************************/
+ul.pagination{
+  margin-right: 20px;
+}
 
+ul.pagination li a{
+  color: #5a7667;
+}
 /********************** responsiveness ********************************************/
 @media only screen and (max-width: 850px) {
+  div.project-wrapper {
+    width: 100%;
+  }
   div.project-details > section{
     max-width: 100%;
     padding: 0.7em;
@@ -109,13 +133,17 @@ div.project-details > section{
   .project-img-wrapper img {
     max-width: 80%;
   }
-
+  .project-img-wrapper iframe{
+    width: 80%;
+    height: 300px;
+  }
   .project{
     max-width: 100%;
   }
   div.project-wrapper > div{
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
   }
   .project-img-wrapper{
     margin-right: 0em;

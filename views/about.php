@@ -70,12 +70,13 @@ $experiences = $experiencepdo->getExperienceInfos();
                 <div class="col-sm-12">
                   <ul>
                     <li>
-                      <span><?= $educInfos[$i]->program_name .':' ?></span>
+                      <span class="diploma"><?= $educInfos[$i]->diploma .',' ?></span>
+                      <span class="program-name"><?= $educInfos[$i]->program_name .':' ?></span>
                       <span><?= $educInfos[$i]->start_date . ' - ' . $educInfos[$i]->end_date ?></span>
                     </li>
                     <li>Key courses: <?= $educInfos[$i]->key_courses ?></li>
                     <?php if (isset($educInfos[$i]->dissertation) && $educInfos[$i]->dissertation !== null): ?>
-                      <li>Dissertation Topic: <?= $educInfos[$i]->dissertation ?></li>
+                      <li> <span class="dissertation"> Dissertation Topic: </span> <?= $educInfos[$i]->dissertation ?></li>
                     <?php endif; ?>
                   </ul>
                 </div>
@@ -99,7 +100,7 @@ $experiences = $experiencepdo->getExperienceInfos();
           ?>
           <section class="experience">
             <div class="row">
-              <h3 class="col-sm-12 experience-position"><?= $experiences[$i]->position .':' ?>:
+              <h3 class="col-sm-12 experience-position"><?= $experiences[$i]->position .':' ?>
                 <span class="experience-period"> <?= $educInfos[$i]->start_date.' - '. $educInfos[$i]->end_date ?></span> </h3>
               </div>
               <div class="row">

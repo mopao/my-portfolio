@@ -117,43 +117,6 @@ nav#menubar{
 
 /******************************** footer style ******************************************************/
 
-/*#social_media_link{
-    text-align: center;
-    height: 2em;
-    display: none;
-}
-ul#list-socialmediaLinks{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2em;
-    margin: 0px;
-    padding: 0px;
-}
-ul#list-socialmediaLinks li{
-    list-style-type: none;
-    display: inline-block;
-}
-ul#list-socialmediaLinks li:first-of-type{
-    margin-right: 2em;
-}
-ul#list-socialmediaLinks li a i#f_github:hover{
-    color: white;
-}
-ul#list-socialmediaLinks li a i#f_linkedln:hover{
-    background: white;
-}
-#f_github{
-    font-size: 1.65em;
-    color: black;
-}
-#f_linkedln{
-    padding: 5px;
-    border-radius: 45%;
-    color:  #c3d4cc;
-    background: black;
-    font-size: 1em;
-}*/
 #div-copyright{
     color: white;
     background-color: #5a7667;

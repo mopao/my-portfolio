@@ -4,9 +4,9 @@ namespace App\Database;
 
 class Database {
 
-    private static $user = "franckch_root";
-    private static $pass = "katagourouma";
-    private static $dsn ="mysql:host=localhost;dbname=franckch_portfolio_db";
+    private static $user = "";
+    private static $pass = "";
+    private static $dsn ="";
     private static $dbcon;
 
     private function __construct() {
